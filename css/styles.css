@@ -135,8 +135,8 @@
     transition: color var(--animation-transition);
 }
 
-.header-contact:hover,
-.header-contact:focus {
+.header-contact__link:hover,
+.header-contact__link:focus {
     color: var(--active-text-color);
 }
 
