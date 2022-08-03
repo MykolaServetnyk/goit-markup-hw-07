@@ -21,12 +21,14 @@
     text-decoration: none;
     color: var(--main-text-color);
     transition: color var(--animation-transition);
+
+    &:hover,
+    &:focus {
+        color: var(--active-text-color);
+    }
 }
 
-.header-contact__link:hover,
-.header-contact__link:focus {
-    color: var(--active-text-color);
-}
+
 
 .header-contact__icon {
     fill: currentColor;

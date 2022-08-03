@@ -21,12 +21,12 @@
     color: #AFB1B8;
     transition: background-color var(--animation-transition);
 
-}
+    &:hover,
+    &:focus {
+        color: #FFFFFF;
+        background-color: #2196F3;
+    }
 
-.social__link:hover,
-.social__link:focus {
-    color: #FFFFFF;
-    background-color: #2196F3;
 }
 
 .social__icon {

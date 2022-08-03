@@ -3,31 +3,34 @@
     flex-wrap: wrap;
     padding-left: 0;
     margin: -15px;
+
+
+    &__item {
+        display: block;
+        flex-basis: calc((100% - 30px * 3) / 3);
+        margin: 15px;
+        }
 }
 
-.portfolio__item {
-    display: block;
-    flex-basis: calc((100% - 30px * 3) / 3);
-    margin: 15px;
 
-
-}
 
 .portfolio__link {
 
     display: block;
     transition: box-shadow var(--animation-transition);
+
+    &:hover,
+    &:focus {
+
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+            0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+
+    }
 }
 
 
-.portfolio__link:hover,
-.portfolio__link:focus {
 
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-        0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
-
-}
 
 .project-overlay {
     position: relative;
